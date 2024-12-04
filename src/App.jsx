@@ -21,12 +21,12 @@ import Error from './Pages/Error';
 function App() {
   const [loading, setLoading] = useState(false);
   
-  // useEffect(()=>{
-  //   setLoading(true);
-  //   setTimeout(()=>{
-  //     setLoading(false);
-  //   },5000)
-  // },[]);
+  useEffect(()=>{
+    setLoading(true);
+    setTimeout(()=>{
+      setLoading(false);
+    },5000)
+  },[]);
   // Initialize Lenis
 const lenis = new Lenis({
   autoRaf: true,
