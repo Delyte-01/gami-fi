@@ -25,7 +25,7 @@ function App() {
     setLoading(true);
     setTimeout(()=>{
       setLoading(false);
-    },5000)
+    },4000)
   },[]);
   // Initialize Lenis
 const lenis = new Lenis({
