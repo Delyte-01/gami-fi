@@ -1,0 +1,107 @@
+.testimonial{
+    /* border: 1px solid grey; */
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-block: 30px;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    position: relative;
+}
+.testimonial>div:nth-child(1){
+    background: url('https://res.cloudinary.com/dk5mfu099/image/upload/v1730982877/62bd633ad0d615646b5ef6f7_Ellipse_14_3_gkplmk.png');
+    background-size: cover;
+     background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-inline: auto;
+    inset: 0%;
+    z-index: -2;
+    margin-top: -9px;
+    filter: blur(200px);
+}
+h1{
+    font-family: var(--font-grotesk);
+}
+.swiper {
+    width: 240px;
+    height: 320px;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    opacity: .96;
+    color: #fff;
+    /* background-color: red; */
+   
+    
+  }.imag{
+    width: 70px;
+    height: 70px;
+  }.swiper-slide >div{
+    /* border: 1px solid grey; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--font-grotesk);
+  }
+  h3{
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  p{
+    font-size: 15px;
+  }
+  
+  .swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+  }
+  
+  .swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+  }
+  
+  .swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+  }
+  
+  .swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+  }
+  
+  .swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+  }
+  
+  .swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+  }
+  
+  .swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+  }
+  
+  .swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+  }
+  
+  .swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+  }
+  
+  .swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+  }
+   

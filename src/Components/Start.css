@@ -1,0 +1,34 @@
+.start{
+    padding-inline: 20px;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40vh;
+}
+.start >div{
+    /* border: 1px solid grey; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.start >div:nth-child(1){
+    font-family: var(--font-grotesk);
+    padding-bottom: 30px;
+}
+@media (min-width:900px) {
+    .start{
+        padding-inline: var(--paddingMedium);
+    }
+}
+@media (min-width:1400px) {
+    .start{
+        padding-inline: var(--paddingBig);
+    }
+}
+
+@media (min-width:1600px) {
+   .start{
+    padding-inline: 350px;
+   }
+}

@@ -1,0 +1,122 @@
+for dynamic heights transitions
+
+import React, { useState,useEffect,useRef } from 'react'
+
+
+create a State,effect and useRef
+
+ const [open,setOpen]= useState(false);
+    const panelRef = useRef(null); // Reference to the panel element
+    const [height, setHeight] = useState('0px'); // Dynamically set height
+
+ // On mount and when isOpen changes, calculate the height of the panel
+    useEffect(() => {
+        if (open) {
+          // Set the height to the natural height of the panel
+          setHeight(`${panelRef.current.scrollHeight}px`);
+        } else {
+          // Set the height to 0px to collapse the panel
+          setHeight('0px');
+        }
+      }, [open]);
+
+      in the expected height div
+    ref={panelRef}
+                     style={{
+                        height: height,
+                        overflow: 'hidden',
+                        transition: 'height 0.3s ease', // Smooth transition for height
+                      }}  
+
+
+                      thanks alot.....
+
+
+
+
+
+
+
+
+.heroHome > div:nth-child(3) >div:nth-child(2) >div:nth-child(1)> div>p:nth-child(1)::after{
+content: "";
+position: absolute;
+width: 10px;
+height: 10px;
+background-color: #448fff;
+border-radius: 50%;
+z-index: -1;
+left: 120px;
+top: -2px;
+}
+.heroHome > div:nth-child(3) >div:nth-child(2) >div:nth-child(1)> div>p:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #448fff;
+    border-radius: 50%;
+    z-index: -1;
+    left: 200px;
+    top: -2px;
+    }
+
+
+
+     <div onClick={handleCheck}
+        className={active ? 'active':''}>
+
+            <a href="#">access</a>
+        </div>
+        <div>
+        <a href="#">community</a>
+        </div>
+        <div
+        >
+            <a   href="#">features</a></div>
+        <div>
+        <a href="#">games</a>
+        </div>
+
+// useEffect(()=>{
+//   setLoading(true);
+//   setTimeout(()=>{
+//     setLoading(false);
+//   },5000)
+// },[]);
+
+
+
+ <li key={item.id}>
+                      <div>
+                        <strong>{item.name}</strong> - ${item.price}
+                      </div>
+                      <div>
+                        <div onClick={() => decreaseQuantity(item.id)}>-</div>
+                        <span>{item.quantity}</span>
+                        <div onClick={() => increaseQuantity(item.id)}>+</div>
+                      </div>
+                      <div>
+                        <div onClick={() => removeFromCart(item.id)}>Remove</div>
+                      </div>
+                      <div>
+                        Total for this item: ${(item.price * item.quantity).toFixed(2)}
+                      </div>
+                    </li>
+
+
+                     <p>many people has the notion that enlightment is one state
+                                .Many also believe that when it is attained, a person is forever in that state.
+                                For your necessary discernment. Thank you for reading.
+                            </p>
+
+
+
+{
+      scrollTrigger:{
+        trigger:heroRef.current,
+        markers:true,
+        start:"20% center",
+        end:"bottom center"
+      }
+     }

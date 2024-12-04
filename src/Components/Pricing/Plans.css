@@ -1,0 +1,135 @@
+.plans{
+    padding-inline: 20px;
+    padding-block: 30px;
+    position: relative;
+}
+.plans>div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-grotesk);
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    padding-block: 40px;
+}.plans>div:nth-child(1)>h3{
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 500;
+}.plans>div:nth-child(2){
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+}.plans>div:nth-child(2)>div{
+    /* border: 1px solid grey; */
+    border-radius: 20px;
+    padding: 40px 30px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    gap: 20px;
+    flex-direction: column;
+}.plans>div:nth-child(2)>div>h1{
+    font-family: var(--font-grotesk);
+    text-transform: capitalize;
+}.plans>div:nth-child(2)>div>p{
+    font-family: var(--font-poppins);
+    
+}.plans>div:nth-child(2)>div>div:first-of-type{
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    align-items: baseline;
+}.plans>div:nth-child(2)>div>div:first-of-type>span{
+    font-family: var(--font-grotesk);
+    font-weight: 900;
+
+}.plans>div:nth-child(2)>div>div:first-of-type>span:nth-child(1){
+    font-size: 50px;
+    padding-left: 15px;
+    position: relative;
+}    .plans>div:nth-child(2)>div>div:first-of-type>span:nth-child(1)::before{
+    content: "$";
+    position: absolute;
+    font-size: 19px;
+    top: 10px;
+    left: 0;
+    font-weight: 500;
+} .plans>div:nth-child(2)>div>div:last-of-type{
+   
+    display: flex;
+}.plans>div:nth-child(2)>div>div:last-of-type>button{
+    width: 150px;
+}.plans>div:nth-child(2)>div>ul{
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* font-weight: 100; */
+}.plans>div:nth-child(2)>div>ul>li{
+    font-weight: 200;
+    text-transform: capitalize;
+    font-family: var(--font-grotesk);
+    padding-left: 20px;
+    position: relative;
+}.plans>div:nth-child(2)>div>ul>li::before{
+content: "";
+width: 10px;
+height: 10px;
+border-radius: 200px;
+position: absolute;
+background-color: rgba(173, 48, 48, 0.795);
+top: 5px;
+left: 4px;
+}main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    filter: blur(100px);
+}
+.plans>div:nth-child(3){
+    background: url('https://res.cloudinary.com/dk5mfu099/image/upload/v1730982877/62bd633ad0d615646b5ef6f7_Ellipse_14_3_gkplmk.png');
+    background-size: cover;
+     background-position: 50% 100%;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    margin-inline: auto;
+    inset: 0%;
+    z-index: -2;
+    margin-top: -9px;
+    filter: blur(30px);
+}
+@media (min-width:820px) {
+    .plans>div:nth-child(2){
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }.plans>div:nth-child(2)>div{
+        padding: 40px 30px;
+    }
+}
+@media (min-width:1028px) {
+    .plans>div:nth-child(2){
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,1fr);
+    }.plans{
+        padding-inline: var(--paddingMedium);
+    }
+}
+@media (min-width:1400px) {
+    .plans{
+        padding-inline: var(--paddingBig);
+    }.plans>div:nth-child(2){
+        /* gap: 30px; */
+    }
+}
+@media (min-width:1600px) {
+    .plans{
+        padding-inline: 320px;
+    }
+}

@@ -1,0 +1,65 @@
+@import url(../../../src//index.css);
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+   /* background-color: rgb(170, 29, 29); */
+    padding-inline: var(--paddingSmall);
+    width: 100%;
+    padding-block: 20px;
+    position: relative;
+    z-index: 12;
+    
+}
+.button{
+    display: none;
+}
+
+.header > div:nth-child(3){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.vga{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+  
+  
+  
+
+
+
+@media (min-width:960px) {
+    .button{
+        display: block;
+        /* width: 100px; */
+        /* border: 1px solid green ; */
+    }.harmburger{
+        display: none;
+    }
+}
+    
+
+
+
+@media (min-width:1124px) {
+    .header{
+        padding-inline: var(--paddingMedium);
+    }
+    
+  } 
+  @media (min-width:1300px) {
+    .header{
+        padding-inline: var(--paddingBig);
+    }
+    
+  }   @media (min-width:1600px) {
+    .header{
+        padding-inline: 330px;
+    }
+  }

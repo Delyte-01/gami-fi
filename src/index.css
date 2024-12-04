@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+}
+:root{
+  --font-grotesk:"Space Grotesk", sans-serif;
+  --font-ubuntu:"Ubuntu", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-monteserat: "Montserrat", sans-serif;
+  --paddingBig:200px;
+  --paddingSmall:15px;
+  --paddingMedium:40px;
+
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  shape-margin: 2rem;
+  font-style: italic;
+  vertical-align: middle;
+  
+  /* cursor:context-menu; */
+}
+.loader{
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+  /* margin: 0 !important; */
+  
+}
+.svg{
+  cursor: pointer;
+}
+body{
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+
+ 
+}
+html{
+  /* scroll-behavior:smooth; */
+}
+.text-gradient{
+  /* background: linear-gradient(to top, red, rgb(255, 123, 0)); */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(100deg, #ff00c7, #ffb800);
+  webkit-text-fill-color: transparent;
+}
+.cursor{
+  cursor: pointer;
+}
+
+
+.overlay{
+  position: fixed;
+  top: 0;
+  background-color:rgba(0, 0, 0, 0.432);
+  filter: blur(20px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 2;
+  cursor: pointer;
+  transition: background-clor,.5s ease-in-out;
+}.overlay.close{
+  display: none;
+}
+@media (min-width:960px) {
+  .overlay{
+    display: none;
+  }
+}
+
+

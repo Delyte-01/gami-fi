@@ -1,0 +1,113 @@
+.contactHero{
+position: relative;
+/* height: 70vh; */
+padding-inline: 20px;
+padding-block: 40px;
+gap: 40px;
+display: flex;
+flex-direction: column;
+/* background-color: green; */
+}
+.contactHero >div:nth-child(1){
+    background: url('https://res.cloudinary.com/dk5mfu099/image/upload/v1730982877/62bd633ad0d615646b5ef6f7_Ellipse_14_3_gkplmk.png');
+    background-size: cover;
+     background-position: 60%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-inline: auto;
+    inset: 0;
+    z-index: -3;
+    margin-top: 30px;
+    filter: blur(20px);
+}
+.contactHero >div{
+    /* border: 1px solid grey; */
+}
+
+.contactHero >div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.contactHero >div:nth-child(2) >h1{
+    font-family: var(--font-grotesk);
+    font-size: 50px;
+    text-transform: capitalize;
+    padding-top: 20px;
+}.contactHero >div:nth-child(2) > p{
+    font-family: var(--font-poppins);
+    font-size: 16px;
+    text-align: center;
+}
+
+.contactHero >div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    gap: 20px;
+}
+.contactHero >div:nth-child(3) >div{
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    border-radius: 20px;
+    padding: 60px 20px;
+    background-color: #533d45;
+    /* filter: blur(100px); */
+}.contactHero >div:nth-child(3) >div >div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contactHero >div:nth-child(3) >div >div:nth-child(1) >h3{
+    font-family: var(--font-grotesk);
+    opacity: .9;
+    font-size: 22px;
+}.contactHero >div:nth-child(3) >div >div:nth-child(1) > span{
+    color: #ff4a76;
+}
+.contactHero >div:nth-child(3) >div >div:nth-child(2) > p{
+    /* color: #ff4a76; */
+    font-family: var(--font-poppins);
+    font-size: 17px;
+    opacity: .9;
+}
+
+
+@media (min-width:800px) {
+    .contactHero > div:nth-child(3){
+        flex-direction: row;
+    }
+    .contactHero > div:nth-child(2) > h1{
+     font-size: 65px;
+    }
+}
+@media (min-width:1200px) {
+    .contactHero{
+        padding-inline: var(--paddingMedium);
+    }.contactHero >div:nth-child(1){
+        width: 70%;
+        inset: -20% 0;
+    }
+    .contactHero > div:nth-child(2) > h1{
+        font-size: 80px;
+       }
+}
+@media (min-width:1400px) {
+    .contactHero{
+        padding-inline: var(--paddingBig);
+    }
+}
+
+@media (min-width:1600px) {
+    .contactHero{
+        padding-inline: 350px;
+    }
+}
+
+

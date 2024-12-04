@@ -1,0 +1,13 @@
+@import url(../../../src//index.css);
+
+
+.logo{
+font-family: var(--font-grotesk);
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.logo >div:nth-child(2){
+    font-weight: 900;
+    font-size: 26px;
+}

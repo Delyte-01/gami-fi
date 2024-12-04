@@ -1,0 +1,28 @@
+.error{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+    /* background-color: yellow; */
+    height: 100vh;
+
+}
+.error>div:nth-child(1){
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+}.error>div:nth-child(2){
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    /* border: 1px solid grey; */
+    justify-content: center;
+    font-family: var(--font-grotesk);
+}.error>div:nth-child(2)>div{
+    border-left: 1px solid grey;
+    height: 110px;
+}

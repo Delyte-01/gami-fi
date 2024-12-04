@@ -1,0 +1,15 @@
+.buttonDiv{
+    font-family: var(--font-grotesk);
+    text-transform: capitalize;
+    /* font-weight: 900; */
+    border: 2px solid white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 10px;
+    padding:15px;
+    width: 200px;
+    border-radius: 10px;
+}

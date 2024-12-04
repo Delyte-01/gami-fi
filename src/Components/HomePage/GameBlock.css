@@ -1,0 +1,312 @@
+
+.gameBlock{
+    padding-inline: 20px;
+    height: 120vh;
+    position: relative;
+    overflow: hidden;
+
+}.gameBlock >div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    /* border: 1px solid grey; */
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    position: relative;
+    height: 80%;
+    /* height: 100%; */
+}
+.gameBlock >div:nth-child(3)>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}.gameBlock >div:nth-child(3)>div:nth-child(2) >div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    /* background-color: green; */
+    padding: 10px;
+    
+}
+.gameBlock >div:nth-child(3)>div:nth-child(2) > div>h3{
+
+    font-family: var(--font-grotesk);
+    color: yellow ;
+}.gameBlock >div:nth-child(3)>div:nth-child(2) > div > span{
+    display: flex;
+    /* align-items: center; */
+}.gameBlock >div:nth-child(3)>div:nth-child(2)  h1{
+    font-family: var(--font-grotesk);
+    font-size: 33px;
+}.gameBlock >div:nth-child(3)>div:nth-child(2)  p{
+    font-family: var(--font-monteserat);
+    width: 100%;
+    line-height: 1.8rem;
+    font-size: 18px;
+    /* border: 1px solid grey; */
+}
+
+
+/* first images  */
+.gameBlock >div:nth-child(3)>div:nth-child(1){
+    /* transform: translateY(-300px); */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.gameBlock >div:nth-child(3)>div:nth-child(1) >div{
+    width: 150px;
+}
+.gameBlock >div:nth-child(3)>div:nth-child(1) >div:nth-child(1){
+transform: translateX(-130px)  translateY(-300px) ;
+    
+}
+.gameBlock >div:nth-child(3)>div:nth-child(1) >div:nth-child(2){
+    transform: translateX(-130px) translateY(-330px) scale(.8);   
+    order: 3;
+}
+.gameBlock >div:nth-child(3)>div:nth-child(1) >div:nth-child(3){
+    transform: translateX(100px) translateY(-280px) ;
+    
+}
+.gameBlock >div:nth-child(3)>div:nth-child(1) >div:nth-child(4){
+    transform: translateX(120px) translateY(-200px) scale(.7) ;
+}
+
+
+
+/* second images */
+.gameBlock >div:nth-child(3)>div:nth-child(3){
+    /* transform: translateY(-300px);/ */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}.gameBlock >div:nth-child(3)>div:nth-child(3) >div{
+    width: 150px;
+}
+.gameBlock >div:nth-child(3)>div:nth-child(3) >div:nth-child(1){
+transform: translateX(130px)  translateY(300px) scale(.7) ;
+    
+}
+.gameBlock >div:nth-child(3)>div:nth-child(3) >div:nth-child(2){
+    transform: translateX(-80px) translateY(150px) scale(1);   
+    order: 3;
+}
+.gameBlock >div:nth-child(3)>div:nth-child(3) >div:nth-child(3){
+    transform: translateX(130px) translateY(390px) scale(.8) ;
+    
+}
+.gameBlock >div:nth-child(3)>div:nth-child(3) >div:nth-child(4){
+    transform: translateX(-120px) translateY(400px) scale(.7) ;
+}
+/* images  */
+
+.spiral{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-inline:auto ;
+    /* left:30%; */
+    right: auto;
+    top: 100px;
+     z-index: -3;
+     /* overflow: hidden; */
+    background-size: cover;
+    /* border: 1px solid grey; */
+    
+    /* background: url('') no-repeat; */
+    /* background-color: green; */
+}.spiral img{
+    object-position: 50% 100%;
+}
+.gameBlock >div:nth-child(1){
+    background: url('https://res.cloudinary.com/dk5mfu099/image/upload/v1730982877/62bd633ad0d615646b5ef6f7_Ellipse_14_3_gkplmk.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0%;
+    z-index: -2;
+    margin-top: -9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:500px) {
+    .gameBlock{
+        height: 80vh;
+    }
+    .gameBlock >div:nth-child(3){
+        padding-top: 20px;
+    }
+/* first images  */
+.gameBlock >div:nth-child(3)>div:nth-child(1){
+    /* transform: translateY(-300px); */
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.gameBlock >div:nth-child(3)>div:nth-child(1) >div{
+    width: 140px;
+    margin-left: 10px;
+}
+.gameBlock >div:nth-child(3)>div:nth-child(1) >div:nth-child(1){
+transform: translateX(0px)  translateY(0px) ;
+    
+}
+.gameBlock >div:nth-child(3)>div:nth-child(1) >div:nth-child(2){
+    transform: translateX(0px) translateY(0px) scale(1);   
+    order:initial;
+}
+.gameBlock >div:nth-child(3)>div:nth-child(1) >div:nth-child(3){
+    transform: translateX(0) translateY(0px) ;
+    
+}
+.gameBlock >div:nth-child(3)>div:nth-child(1) >div:nth-child(4){
+    transform: translateX(0px) translateY(0px) scale(1) ;
+}
+
+
+
+/* second images */
+.gameBlock >div:nth-child(3)>div:nth-child(3){
+    /* transform: translateY(-300px);/ */
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}.gameBlock >div:nth-child(3)>div:nth-child(3) >div{
+    width: 140px;
+    margin-right: 10px;
+}
+.gameBlock >div:nth-child(3)>div:nth-child(3) >div:nth-child(1){
+transform: translateX(0px)  translateY(0px) scale(1) ;
+    
+}
+.gameBlock >div:nth-child(3)>div:nth-child(3) >div:nth-child(2){
+    transform: translateX(0px) translateY(0px) scale(1);   
+    order: initial;
+}
+.gameBlock >div:nth-child(3)>div:nth-child(3) >div:nth-child(3){
+    transform: translateX(0px) translateY(0px) scale(1) ;
+    
+}
+.gameBlock >div:nth-child(3)>div:nth-child(3) >div:nth-child(4){
+    transform: translateX(0px) translateY(0px) scale(1) ;
+}
+}
+
+
+@media (min-width:750px) {
+    .spiral{
+        left: 10%;
+        top: 60px;
+        width: 80%;
+    }
+}
+@media (min-width:1024px) {
+    .spiral{
+        width: 60%;
+        left: 20%;
+        top: 10px;
+    }
+    
+/* first images  */
+.gameBlock >div:nth-child(3)>div:nth-child(1){
+    /* transform: translateY(-300px); */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.gameBlock >div:nth-child(3)>div:nth-child(1) >div{
+    width: 150px;
+}
+.gameBlock >div:nth-child(3)>div:nth-child(1) >div:nth-child(1){
+transform: translateX(-350px)  translateY(80px) scale(.8) ;
+    
+}
+.gameBlock >div:nth-child(3)>div:nth-child(1) >div:nth-child(2){
+    transform: translateX(-390px) translateY(-50px) scale(1);   
+    order: 3;
+}
+.gameBlock >div:nth-child(3)>div:nth-child(1) >div:nth-child(3){
+    transform: translateX(300px) translateY(-60px) ;
+    
+}
+.gameBlock >div:nth-child(3)>div:nth-child(1) >div:nth-child(4){
+    transform: translateX(330px) translateY(80px) scale(.7) ;
+}
+
+
+
+/* second images */
+.gameBlock >div:nth-child(3)>div:nth-child(3){
+    /* transform: translateY(-300px);/ */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}.gameBlock >div:nth-child(3)>div:nth-child(3) >div{
+    width: 150px;
+}
+.gameBlock >div:nth-child(3)>div:nth-child(3) >div:nth-child(1){
+transform: translateX(-10px)  translateY(-80px) scale(.7) ;
+    
+}
+.gameBlock >div:nth-child(3)>div:nth-child(3) >div:nth-child(2){
+    transform: translateX(-300px) translateY(110px) scale(1);   
+    order: 3;
+}
+.gameBlock >div:nth-child(3)>div:nth-child(3) >div:nth-child(3){
+    transform: translateX(250px) translateY(290px) scale(.8) ;
+    
+}
+.gameBlock >div:nth-child(3)>div:nth-child(3) >div:nth-child(4){
+    transform: translateX(60px) translateY(300px) scale(.7) ;
+}.gameBlock >div:nth-child(3)>div:nth-child(2)  p{
+    max-width: 50%;
+}
+}
+@media (min-width:1300px) {
+    .gameBlock{
+        padding-inline: var(--paddingBig);
+    }
+    .spiral{
+        left: 30%;
+        top: 1px;
+        width: 40%;
+    }
+}
+
+@media (min-width:1600px) {
+    .gameBlock{
+        padding-inline: 330px;
+    }.spiral{
+        left: 30%;
+        top: 30px;
+        width: 38%;
+    }
+  }
+ 

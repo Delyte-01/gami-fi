@@ -1,0 +1,56 @@
+
+.heroGlobal{
+    min-height: 500px;
+    /* top: -100px; */
+    position: relative;
+    margin-top: -100px;
+    /* padding-top: 0px; */
+    padding-inline: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    flex-direction: column;
+    /* overflow: hidden; */
+    gap: 20px;
+    /* border: 1px solid grey; */
+}
+.bg-heroHome{
+    background: url('https://res.cloudinary.com/dk5mfu099/image/upload/v1730982877/62bd633ad0d615646b5ef6f7_Ellipse_14_3_gkplmk.png');
+    background-size: cover;
+     background-position: 50% 90%;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    margin-inline: auto;
+    inset: 0%;
+    z-index: -2;
+    margin-top: -9px;
+    filter: blur(20px);
+}
+.heroGlobal >div:nth-child(2){
+font-family: var(--font-grotesk);
+font-size: 50px;
+font-weight: 900;
+
+}.heroGlobal >div:nth-child(3){
+    display: flex;
+    font-family: var(--font-monteserat);
+    gap: 10px;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+@media (min-width:400px) {
+    .heroGlobal >div:nth-child(2){
+        font-size: 60px;
+
+        }
+         
+}
+@media (min-width:1300px) {
+    .heroGlobal >div:nth-child(2){
+        font-size: 90px;
+    }
+}

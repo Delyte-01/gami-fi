@@ -1,0 +1,205 @@
+.tabComty{
+padding: 10px 0px;
+margin-top: 100px;
+height: auto;
+/* background-color: aqua; */
+}
+.tabComty >div{
+    /* border: 1px solid grey; */
+    /* height: 100%; */
+    display: flex;
+    background-color: #1b1b1b;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.tabComty > div >div{
+    /* border: 1px solid red; */
+    
+}.tabComty > div  >div:nth-child(1){
+    display: grid;
+    align-items: center;
+    border-bottom: 2px solid grey;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    
+}.tabComty > div  >div:nth-child(2){
+    /* border: 1px solid grey; */
+   
+    /* background-color: green; */
+    /* grid-template-rows: repeat(2,1fr); */
+}.label{
+    background-color: yellow;
+}.nolabel{
+    background-color: transparent;
+}
+.tabComty > div >div:nth-child(1)>div{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding: 25px 10px;
+   
+    /* padding: 10px 10px; */
+    /* padding: 10px; */
+}.tabComty > div >div:nth-child(1)>div button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-family: var(--font-grotesk);
+    font-weight: 900;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    font-size: 18px;
+    /* flex-basis: 1; */
+}
+.tabComty > div >div:nth-child(2)>div {
+    /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+}
+.tabComty > div >div:nth-child(2)>div >div{
+    /* border: 1px solid rgb(0, 45, 128); */
+     display: flex; 
+     flex-direction: column; 
+    padding: 40px 20px;
+    opacity: .9;
+    
+}.tabComty > div >div:nth-child(2)>div >div:nth-child(2){
+display: flex;
+gap: 30px;
+flex-direction: column;
+/* background-color: yellow; */
+}.tabComty > div >div:nth-child(2)>div >div:nth-child(2) > h1{
+    font-family: var(--font-grotesk);
+}
+.tabComty > div >div:nth-child(2)>div >div:nth-child(2) > p{
+    font-family: var(--font-poppins);
+    line-height: 1.7rem;
+    font-size: 15px;
+}.tabComty > div >div:nth-child(2)>div >div:nth-child(2) > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-ubuntu);
+    font-size: 14px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+    
+}.tabComty > div >div:nth-child(2)>div >div:nth-child(2) > div >span{
+display: flex;
+align-items: center;
+}.tabComty > div >div:nth-child(2)>div >div:nth-child(2) > div> h3{
+font-weight: 500;
+}
+/* div for the images */
+.tabComty > div >div:nth-child(2)>div >div:nth-child(1){
+    display: flex;
+    /* height: 100%; */
+    padding-block: 20px;
+    /* border: 1px solid green; */
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+}/* div for the images */
+.tabComty > div >div:nth-child(2)>div >div:nth-child(1) >div{
+    /* border: 1px solid green; */
+  
+    height: 78px;
+}
+
+
+.tabComty > div >div:nth-child(2)>div >div:nth-child(1) >div img{
+    border-radius: 10px;
+}
+
+
+@media (min-width:500px) {
+    .tabComty > div >div:nth-child(2)>div >div:nth-child(1) >div{
+        height: auto;
+        width: 58%;
+    }
+    .tabComty > div >div:nth-child(2)>div >div:nth-child(1) >div:nth-child(2){
+        /* border: 1px solid red; */
+        margin-left: auto;
+        
+        
+    }
+      
+}
+@media (min-width:780px) {
+    .tabComty > div >div:nth-child(2)>div >div:nth-child(1) >div:nth-child(2){
+        margin-left: 0;
+    }  
+    .tabComty > div >div:nth-child(2)>div >div:nth-child(1) >div{
+        height: auto;
+        width: 100%;
+    }
+    .tabComty > div >div:nth-child(2)>div {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+        display: grid;
+        align-items: center;
+        /* justify-content: center; */
+       
+    } .tabComty > div >div:nth-child(2)>div >div:nth-child(1){
+        order: 2;
+    }
+}
+
+
+@media (min-width:1600px) {
+    .tabComty{
+        padding-inline: 400px;
+    }
+  }
+ 
+  @media (min-width:990px) {
+    .tabComty{
+        padding-inline: 30px;
+        /* background-color: green; */
+    }.tabComty > div >div:nth-child(2)>div >div:nth-child(1) >div{
+        height: 86px;
+        width: 342px;
+    }.tabComty > div >div:nth-child(2)>div >div:nth-child(1) >div:nth-child(2){
+        transform: translateX(100px);
+    }.tabComty > div >div:nth-child(2)>div{
+        padding: 40px;
+    }
+    .tabComty > div >div:nth-child(2)>div >div:nth-child(2){
+        /* border: 1px solid grey; */
+        display: flex;
+        gap: 30px;
+        
+    }
+  } 
+  @media (max-width:380px) {
+    .tabComty > div >div:nth-child(2)>div >div:nth-child(1) >div{
+        /* border: 1px solid green; */
+      
+        height: auto;
+    }
+  }
+  @media (max-width:1333px) {
+    .tabComty{
+        padding-inline: 60px ;
+    }
+} @media (max-width:496px) {
+    .tabComty{
+        padding-inline: 20px ;
+    }
+}
+
+@media (min-width:1400px) {
+    .tabComty{
+        padding-inline: var(--paddingBig);
+    }
+}
+@media (min-width:1600px) {
+    .tabComty{
+        padding-inline: 350px;
+    }
+}

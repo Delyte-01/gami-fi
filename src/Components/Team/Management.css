@@ -1,0 +1,91 @@
+.management{
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding-bottom: 120px;
+    /* align-items: center; */
+}.management > div:nth-child(1){
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding-block: 20px;
+}.management > div:nth-child(1) > h3{
+    text-transform: capitalize;
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    color:#ffb800 ;
+    font-size: 17px;
+}.management > div:nth-child(1) >h1{
+    font-family: var(--font-grotesk);
+    padding-bottom: 20px;
+}.management > div:nth-child(2)>div{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    /* gap: 20px; */
+}.management > div:nth-child(2) >div>div:nth-child(2) {
+   display: flex;
+   flex-direction: column;
+   padding-block: 30px;
+   gap: 20px;
+   background-color:#333333 ;
+}.management > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}.management > div:nth-child(2) >div>div:nth-child(2) >div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: capitalize;
+}.management > div:nth-child(2) >div>div:nth-child(2) >div:nth-child(1) > h2{
+    font-family: var(--font-grotesk);
+    font-size: 22px;
+}.management > div:nth-child(2) >div>div:nth-child(2) > div:nth-child(1) >p{
+    color: #ff645a;
+}.management > div:nth-child(2) >div>div:nth-child(2) > div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* fill: white; */
+}.management > div:nth-child(2) >div>div:nth-child(2) > div:nth-child(2)>span{
+    display: flex;
+    font-size: 20px;
+    padding-block: 20px;
+}.management > div:nth-child(2) >div>div:nth-child(1){
+    height: 310px;
+}
+
+@media (min-width:900px) {
+    .management{
+        padding-inline: var(--paddingMedium);
+    }
+    .management >div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+}
+
+@media (min-width:1028px) {
+    .management > div:nth-child(2){
+       display: flex;
+       flex-direction: row;
+    }
+}
+@media (min-width:1400px) {
+    .management{
+        padding-inline:var(--paddingBig);
+    }
+}
+@media (min-width:1600px) {
+    .management{
+        padding-inline: 340px;
+    }  .management > div:nth-child(2){
+        gap: 10px;
+    }
+}
