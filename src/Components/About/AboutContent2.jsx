@@ -25,7 +25,7 @@ function AboutContent2() {
        tl4.from(".aboutcontent3",{scale:.5,opacity:0})
        tl4.from(".aboutcontent4",{scale:.5,opacity:0})
        tl4.from(".aboutcontent5",{scale:.5,opacity:0})
-       tl4.from(".aboutcontent1",{scale:.5,opacity:0,x:400})
+       tl4.from(".aboutcontent1",{scale:.5,opacity:0})
       })
   return (
     <div className='aboutContent2' ref={aboutContent2Ref}>

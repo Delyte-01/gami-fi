@@ -23,8 +23,8 @@ function TaskProgress() {
             end:"bottom center"
         }
       });
-              tl.from(".animateCareer",{scale:.5,opacity:0,x:400} )
-              tl.from(".animateCareer1",{scale:.5,opacity:0,duration:1,x:-400})
+              tl.from(".animateCareer",{scale:.5,opacity:0,x:40} )
+              tl.from(".animateCareer1",{scale:.5,opacity:0,duration:1,x:-40})
               
               
     });

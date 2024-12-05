@@ -18,7 +18,7 @@ function FeaturesHome() {
           scrollTrigger:{
             trigger:featureRef.current,
             // markers:true,
-            start:"20% center",
+            start:"top 20%",
             end:"bottom center",
             // scrub:true
           }

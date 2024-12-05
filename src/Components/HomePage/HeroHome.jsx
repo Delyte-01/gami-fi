@@ -18,7 +18,7 @@ function HeroHome() {
       
   useGSAP(()=>{
     let tl = gsap.timeline();
-         tl.from(".im",{x:300, duration:.9,scale:.5})
+         tl.from(".im",{x:50, duration:.9,scale:.5})
             .to(".im", {x:0,scale:1})
             tl.from(".animate",{scale:.5,opacity:0,duration:.5},1 )
             tl.from(".animate2",{scale:.5,opacity:0,duration:.5},1.5 )

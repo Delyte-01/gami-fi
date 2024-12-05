@@ -21,7 +21,7 @@ function AboutContent1() {
         }
        });
 
-       tl4.from(".content1",{scale:.5,opacity:0,x:-400})
+       tl4.from(".content1",{scale:.5,opacity:0})
        tl4.from(".content2",{scale:.5,opacity:0})
        tl4.from(".content3",{scale:.5,opacity:0},"+=.2")
        tl4.from(".content4",{scale:.5,opacity:0})

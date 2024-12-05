@@ -28,9 +28,9 @@ function PopularHome() {
           }
          });
   
-         tl5.from(".popular1",{scale:.5,opacity:0,x:-400})
-         tl5.from(".popular2",{scale:.5,opacity:0,x:400})
-         tl5.from(".popular3",{scale:.5,opacity:0,x:400})
+         tl5.from(".popular1",{scale:.5,opacity:0,x:-50})
+         tl5.from(".popular2",{scale:.5,opacity:0,x:50})
+         tl5.from(".popular3",{scale:.5,opacity:0,x:50})
         })
   return (
     <div className='popularGames' id='games' ref={popularRef}>

@@ -3,12 +3,12 @@ import PuffLoader
  from "react-spinners/PuffLoader";
 import '../index.css'
 
-function Loader({loading}) {
- 
 
+
+function Loader({loading}) {
     const [color, setColor] = useState("#fff");
   return (
-    <div className='loader'>
+    <div className='loader' >
         {
             loading && 
         <PuffLoader
