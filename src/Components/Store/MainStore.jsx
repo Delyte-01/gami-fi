@@ -3,32 +3,10 @@ import { storeArry } from '../../../Data.js/store'
 import '../../Components/Store/MainStore.css'
 import Button from '../Button'
 import { useNavigate } from 'react-router-dom';
-import { useRef } from 'react';
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(useGSAP,ScrollTrigger);
-gsap.registerPlugin(ScrollTrigger);
 
 
 function MainStore() {
-    const storeRef=useRef();
-       
 
-    useGSAP(()=>{
-     gsap.from("#store",{
-        scale:.2,
-        opacity:0,
-        scrollTrigger:{
-            trigger:storeRef.current,
-            start:"top 30%",
-            end:"60% top",
-            // markers:true,
-            // scrub:true
-        }
-     })
-         
-        })
   const [storeArr, setStoreArry] =useState( storeArry);
   const navigate = useNavigate();
 
@@ -44,7 +22,7 @@ function MainStore() {
   }
 
   return (
-    <div className='mainStore ' ref={storeRef} >
+    <div className='mainStore '  >
       <div className='bg-MainHome'></div>
       <div className='hello'>
         <ul >

@@ -19,7 +19,8 @@ function Cart() {
         </div>
         <div>
             <ul>
-                 {cart.length !== 0 ? (cart.map((item) => (
+                 {cart.length !== 0 ? 
+                 (cart.map((item) => (
                    <>
                    <div>
                         <div>
@@ -41,7 +42,8 @@ function Cart() {
                                 >-</div>
                                 <div>{item.quantity}</div>
                                 <div
-                                 onClick={() => increaseQuantity(item.id)}>+</div>
+                                 onClick={() => increaseQuantity(item.id)}>+
+                                 </div>
                             </div>
                             
                         </div>
@@ -51,7 +53,6 @@ function Cart() {
                   ))):(
                     <div className='empty'>
                        <h2 >no items found.</h2>
-                       <a href="/store">visit our store...</a>
                     </div>
                   )} 
             </ul>
